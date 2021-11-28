@@ -1,5 +1,7 @@
-<%- include ('./includes/head.ejs') %>
+<%- include ('./includes/head') %>
 
-    <h1>Hello World!</h1>
+    <% if (preloaderEnable) { %>
+        <%- include ('./includes/preloder') %>
+    <% } %>
 
-<%- include ('./includes/foot.ejs') %>
+<%- include ('./includes/foot') %>
