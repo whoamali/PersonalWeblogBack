@@ -1,6 +1,7 @@
 const express = require('express');
 
 const { setStatics } = require('./utils/statics');
+const indexRoute = require('./routes/indexRoute');
 
 const app = express()
 
@@ -12,10 +13,6 @@ app.set("views", "views")
 setStatics(app)
 
 // Routes
-app.use("/", (req, res) => {
-    res.send(`
-        <h1> Hello World! </h1>
-    `)
-})
+app.use(indexRoute)
 
 app.listen(3000, () => console.log("Server is running"))
