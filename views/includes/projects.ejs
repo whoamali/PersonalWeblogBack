@@ -1,0 +1,24 @@
+<!-- Project code start -->
+<section class="projects">
+    <div class="container">
+        <h3 class="sect-header">My Projects</h3>
+        <div class="project-flex">
+            <% for (project of personProjects) { %>
+                <div class="project">
+                    <div class="project-image">
+                        <a href="<%- project.image %>" target="_blank"><img src="<%- project.image %>" loading="lazy" alt="<%- project.name %>"></a>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-content-titlle"><%- project.name %></h3>
+                        <p  class="project-content-status">Status: <span><%- project.status %></span></p>
+                        <div class="project-content-links">
+                            <a href="<%- project.link %>" class="view" target="_blank"><i class="far fa-eye"></i></a>
+                            <a href="<%- project.github %>" class="github" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</section>
+<!-- Project code end -->
