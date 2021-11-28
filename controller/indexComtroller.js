@@ -3,6 +3,8 @@ exports.index = (req, res) => {
         "index",
         {
             pageTitle: "Ali's personal blog",
+            pageIcon: "img/favicon.webp",
+            preloaderEnable: true,
             personName: "Ali Soleimani",
             personAge: "18",
             personBirthday: "18 Esfand",
@@ -22,28 +24,28 @@ exports.index = (req, res) => {
                 {
                     name: "Rock Paper Scissors",
                     status: "Offline",
-                    image: "/img/Rock.webp",
+                    image: "img/Rock.webp",
                     link: "/",
                     github: "/"
                 },
                 {
                     name: "Countries",
                     status: "Offline",
-                    image: "/img/Countries.webp",
+                    image: "img/Countries.webp",
                     link: "/",
                     github: "/"
                 },
                 {
                     name: "Bugs",
                     status: "Offline",
-                    image: "/img/Bugs.webp",
+                    image: "img/Bugs.webp",
                     link: "/",
                     github: "/"
                 },
                 {
                     name: "Claculator",
                     status: "Offline",
-                    image: "/img/Claculator.webp",
+                    image: "img/Claculator.webp",
                     link: "http://ali-sl.gigfa.com/Calculator/",
                     github: "https://github.com/ali-sl-code/Calculator"
                 }
