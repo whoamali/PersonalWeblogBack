@@ -1,0 +1,19 @@
+<!-- My skills code start -->
+<section class="skills">
+    <div class="container">
+        <h3 class="sect-header">My skills</h3>
+        <div class="skils-div">
+            <% for (skill of personSkills) { %>
+                <div class="skil">
+                    <div class="skil-title">
+                        <h2><%- skill['name'] %> <i class="<%- skill['icon'] %>"></i></h2>
+                    </div>
+                    <div class="skil-range">
+                        <div class="skil-range-number" style="width: <%- skill['range'] %>;"></div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</section>
+<!-- My skills code end -->
