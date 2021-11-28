@@ -4,4 +4,60 @@
         <%- include ('./includes/preloder') %>
     <% } %>
 
+    <!-- Header code strat -->
+    <header>
+        <div id="particles-js">
+            <a href="img/me.webp" target="_blank"><img src="img/me.webp" alt="I am :)"></a>
+            <h1 class="title"><%- personName %></h1>
+            <h3 class="subtitle"><%- personJobTitle %></h3>
+        </div>
+    </header>
+    <!-- Header code end -->
+
+    <!-- About me code start -->
+    <section class="about-me">
+        <div class="container">
+            <div class="box">
+                <h3>About Me</h3>
+                <p><%- sectionAboutMeDesc %></p>
+                <p>Age: <span><%- personAge %></span></p>
+                <p>Birthday: <span><%- personBirthday %></span></p>
+                <p>City: <span><%- personCity %></span></p>
+            </div>
+        </div>
+    </section>
+    <!-- About me code end -->
+
+    <%- include ('./includes/skills') %>
+
+    <!-- Contact me code start -->
+    <section class="contact">
+        <div class="container">
+            <div class="box">
+                <div class="contact-info">
+                    <h3>Contact me</h3>
+                    <p><i class="fas fa-mobile-alt"></i> <br> <a href="tel: <%- personMobile %>"><%- personMobile %></a></p>
+                    <p><i class="fas fa-phone"></i> <br> <a href="tel: <%- personTellNumber %>"><%- personTellNumber %></a></p>
+                    <p><i class="far fa-envelope"></i> <br> <a href="https://<%- personEmail %>" target="_blank"><%- personEmail %></a></p>
+                </div>
+                <div class="container-social">
+                    <ul>
+                        <% for (social of personSocial) { %>
+                            <li><a target="_blank" href="<%- social.link %>" title="<%- social.title %>"><i class="<%- social.icon %>"></i></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact me code end -->
+
+    <%- include ('./includes/projects') %>
+
+    <!-- Copy right code start -->
+    <section class="copy-right">
+        <p>Powered By &#8605; <%- personName %> &#9829;</p>
+    </section>
+    <!-- Copy right code end -->
+
 <%- include ('./includes/foot') %>
