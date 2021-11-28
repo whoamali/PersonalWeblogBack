@@ -13,10 +13,26 @@ exports.index = (req, res) => {
             personTellNumber: "041-32810158",
             personEmail: "alisoleimani199@gmail.com",
             personSocial: [
-                {telegram: "https://t.me/alanton_co"},
-                {instagram: "-"},
-                {twitter: "-"},
-                {github: "https://github.com/ali-sl-code"},
+                {
+                    title: "telegram",
+                    icon: "fab fa-telegram-plane",
+                    link: "https://t.me/alanton_co"
+                },
+                {
+                    title: "instagram",
+                    icon: "fab fa-instagram",
+                    link: "/"
+                },
+                {
+                    title: "twitter",
+                    icon: "fab fa-twitter",
+                    link: "/"
+                },
+                {
+                    title: "github",
+                    icon: "fab fa-github",
+                    link: "https://github.com/ali-sl-code"
+                }
             ],
             personJobTitle: "Developer",
             sectionAboutMeDesc: "I am interested in programming and teaching it. <br> I have been learning it for more than two year and i am still looking forward to learn new skills",
